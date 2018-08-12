@@ -61,6 +61,10 @@ module Therocktrading
       get("funds/#{fund_id}/trades")
     end
 
+    def transactions(id)
+      get("transactions/#{id}")
+    end
+
     private
 
     def signature(path, params, nonce)
